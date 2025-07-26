@@ -1,0 +1,178 @@
+/* Algemene opmaak */
+html {
+  background-color: #e0f7fa; /* volledige pagina heeft deze kleur (licht blauw) */
+}
+
+/* Body en structuur */
+body {
+  background-color: #ffffff; /* afwijkende kleur voor de inhoud */
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigatie */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
+  color: white;
+  background-color: #1976D2;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0D47A1;
+}
+
+/* Section en content */
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Intro met foto */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profiel-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.inleiding {
+  flex: 1;
+  min-width: 200px;
+  word-wrap: break-word;
+}   
+
+/* Footer */
+footer {
+  background-color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #333;
+  border-top: 1px solid #ccc;
+}
+
+/* Contactformulier */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fdfdfd;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  background-color: #e3f2fd; 
+  border-color: #1976D2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+
+button[type="submit"] {
+  align-self: center;
+  background: linear-gradient(to right, #1976D2, #0D47A1);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(to right, #1565C0, #0B3D91);
+}
+
+/*CV*/
+.cv-tabel {
+  margin-top: 30px;
+}
+
+.cv-tabel h2 {
+  text-align: center;
+  color: #1976D2;
+  margin-bottom: 20px;
+}
+
+.cv-tabel table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.cv-tabel th {
+  background-color: #e3f2fd;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.1em;
+  border-bottom: 2px solid #bbdefb;
+}
+
+.cv-tabel td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left; }

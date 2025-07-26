@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mijn Portfolio</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="mijncv.html">Mijn CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Neem contact op</h2>
+<form class="contact-form">
+  <div class="form-row">
+    <div class="form-group">
+      <label for="voornaam">Voornaam</label>
+      <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required>
+    </div>
+    <div class="form-group">
+      <label for="achternaam">Achternaam</label>
+      <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" name="email" placeholder="jij@email.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="bericht">Bericht</label>
+    <textarea id="bericht" name="bericht" rows="5" placeholder="Typ hier je bericht..." required></textarea>
+  </div>
+
+  <button type="submit">Verzenden</button>
+</form>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Jonathan Daneels
+  </footer>
+</body>
+</html>
